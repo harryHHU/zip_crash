@@ -7,10 +7,10 @@ dictFile="pwdict.txt"
 
 password=open(dictFile,'r')
 
+zf=zipfile.ZipFile(filename)
+
 for p in password:
-
-    zf=zipfile.ZipFile(filename)
-
+    
     p=p.strip('\n')
 
     try:
